@@ -14,6 +14,7 @@ node() {
      // this is currently WIP - need to be adjusted to pickup SonarQube properties file.  
      stage('sonarScanner') {
         echo "starting SonarQube"
+            verbose:true
         sonarExecuteScan script: this
         echo "end of sonarQube"
     } 

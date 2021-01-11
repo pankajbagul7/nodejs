@@ -24,7 +24,7 @@ node() {
             //set mtaPath: '/var/jenkins_home/workspace/P1_1_REST_persist_in_Memory@2/com.sap.piper.node.hello.world.mtar'
            
                    sh """
-                   cp /var/jenkins_home/workspace/P1_1_REST_persist_in_Memory@2/com.sap.piper.node.hello.world.mtar /var/jenkins_home/workspace/P1_1_REST_persist_in_Memory 
+                   cp /var/jenkins_home/workspace/p2_main@2/com.sap.piper.node.hello.world.mtar /var/jenkins_home/workspace/p2_main 
                    """
         tmsUpload script: this
           

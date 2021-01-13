@@ -25,7 +25,6 @@ node() {
                    cp /var/jenkins_home/workspace/p2_main@2/com.sap.piper.node.hello.world.mtar /var/jenkins_home/workspace/p2_main 
                    """
         tmsUpload script: this
-          
         echo "end of tms upload"
     }
 }

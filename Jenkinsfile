@@ -1,6 +1,6 @@
 @Library('piper-lib-os') _
 node() {
-       stage('prepare') {
+       stage('init') {
         echo "starting stage prepare"
         checkout scm
         echo "checkout scm successful"

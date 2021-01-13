@@ -17,7 +17,8 @@ node() {
             verbose:true
         sonarExecuteScan script: this
         echo "end of sonarQube"
-    } */
+    } 
+    */
        
        
        

@@ -17,6 +17,11 @@ app.get(url, function (req, res) {
     res.status(200).json(users);
 });
 
+app.get('/demo', function (req, res) {
+    log('Get All Request');
+    res.status(200).json(users);
+});
+
 app.get(url + '/:id', function (req, res) {
     // First read existing users.
     const userId = parseInt(req.params.id);

@@ -21,7 +21,7 @@ app.get(url, function (req, res) {
                     }); 
     
 
-            res.write("This is Test Message.-"+JSON.parse(users));  
+            res.write("This is Test Message.-".json(users));  
             res.end(); 
 });
 

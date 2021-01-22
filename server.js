@@ -14,7 +14,13 @@ app.use(bodyParser.json());
 
 app.get(url, function (req, res) {
     log('Get All Request');
-    res.status(200).json(users);
+    //res.status(200).json(users);
+    
+    res.writeHead(200, {  
+                'Content-Type': 'text/plain'  
+            });  
+            res.write("This is Test Message.");  
+            res.end(); 
 });
 
 app.get('/demo', function (req, res) {

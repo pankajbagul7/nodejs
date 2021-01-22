@@ -16,10 +16,10 @@ app.get(url, function (req, res) {
     log('Get All Request');
     //res.status(200).json(users);
     
-    res.writeHead(200, {  
-                'Content-Type': 'text/plain'  
-            });  
-            res.write("This is Test Message.");  
+   res.writeHead(200, {  
+                        'Content-Type': 'text/html'  
+                    }); 
+            res.write("This is Test Message.-"+users);  
             res.end(); 
 });
 

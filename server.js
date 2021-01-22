@@ -12,7 +12,7 @@ const users = require('./users.json');
 
 app.use(bodyParser.json());
 
-app.get(url, function (req, res) {
+app.get('/demo', function (req, res) {
     log('Get All Request');
     //res.status(200).json(users);
     
@@ -27,7 +27,7 @@ app.get(url, function (req, res) {
             res.end(); 
 });
 
-app.get('/demo', function (req, res) {
+app.get(url, function (req, res) {
     log('Get All Request');
     res.status(200).json(users);
 });

@@ -19,7 +19,14 @@ app.get(url, function (req, res) {
    res.writeHead(200, {  
                         'Content-Type': 'text/html'  
                     }); 
-            res.write("This is Test Message.-"+users);  
+    var i = 0;
+var len = users.length;
+for (; i < len; ) { 
+  text += users[i].name + "<br>";
+  i++;
+}
+
+            res.write("This is Test Message.-"+text);  
             res.end(); 
 });
 

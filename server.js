@@ -21,7 +21,7 @@ app.get('/demo', function (req, res) {
                     }); 
     
 
-            res.write('<!DOCTYPE html><html><body><h1 style="background-color:Green">POC - Project "Piper": Continuous Delivery for the SAP Ecosystem</h1>'+
+            res.write('<!DOCTYPE html><html><body><h1 style="background-color:Blue">POC - Project "Piper": Continuous Delivery for the SAP Ecosystem</h1>'+
                       '<p>Continuous delivery is a method to develop software with short feedback cycles. It is applicable to projects both for SAP Cloud Platform and SAP on-premise platforms. SAP implements tooling for continuous delivery in project "Piper". The goal of project "Piper" is to substantially ease setting up continuous delivery in your project using SAP technologies.</p>'+
                        '</body></html>');  
             res.end(); 
